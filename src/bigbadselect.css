@@ -1,20 +1,20 @@
-.selectified {
+.bigbadselected {
   position: absolute;
   top: -10000px;
   left: -10000px;
 }
 
-.selectify {
+.bigbadselect {
   display: inline-block;
   position: relative;
 }
 
-.selectify .selectify-current-container {
+.bigbadselect .bigbadselect-current-container {
   z-index: 1;
   background: #FFF;
 }
 
-.selectify .selectify-options-container {
+.bigbadselect .bigbadselect-options-container {
   top: 0;
   left: 0;
   position: absolute;

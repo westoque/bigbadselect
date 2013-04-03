@@ -6,9 +6,9 @@
    * @returns {string}
    */
   var mainTmpl = function() {
-     return '<div class="selectify">' +
-              '<div class="selectify-current-container" tabindex="-1"></div>' +
-              '<div class="selectify-options-container" tabindex="-1"></div>' +
+     return '<div class="bigbadselect">' +
+              '<div class="bigbadselect-current-container" tabindex="-1"></div>' +
+              '<div class="bigbadselect-options-container" tabindex="-1"></div>' +
             '</div>';
   };
 
@@ -45,10 +45,10 @@
     this.currentTmpl = currentTmpl || defaultCurrentTmpl;
     this.optionTmpl  = optionTmpl || defaultOptionTmpl;
     this.$el = $(mainTmpl());
-    this.$currentCont = this.$el.find('.selectify-current-container');
-    this.$optionsCont = this.$el.find('.selectify-options-container');
+    this.$currentCont = this.$el.find('.bigbadselect-current-container');
+    this.$optionsCont = this.$el.find('.bigbadselect-options-container');
     this.$select = $(select);
-    this.$select.addClass('selectified');
+    this.$select.addClass('bigbadselected');
     this.$selectedOption = this.$select.find(':selected');
     this.renderCurrent();
     this.addOptions();
@@ -71,7 +71,7 @@
       var $sOption = $('<div>');
 
       // Add the class name
-      $sOption.addClass('selectify-option');
+      $sOption.addClass('bigbadselect-option');
 
       // Add the data-val attribute
       $sOption.attr('data-val', $option.val());
@@ -98,7 +98,7 @@
       this.$optionsCont.hide();
     }.bind(this));
 
-    this.$optionsCont.on('click', '.selectify-option', function(event) {
+    this.$optionsCont.on('click', '.bigbadselect-option', function(event) {
       var $sOption = $(event.currentTarget);
 
       // Hide the options

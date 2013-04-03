@@ -34,11 +34,11 @@ A select with:
 Produces:
 
 ```html
-<div class="selectify">
-  <div class="selectify-current-container">California</div>
-  <div class="selectify-options-container">
-    <div class="selectify-option selected" data-val="CA">California</div>
-    <div class="selectify-option" data-val="NY">New York</div>
+<div class="bigbadselect">
+  <div class="bigbadselect-current-container">California</div>
+  <div class="bigbadselect-options-container">
+    <div class="bigbadselect-option selected" data-val="CA">California</div>
+    <div class="bigbadselect-option" data-val="NY">New York</div>
   </div>
 </div>
 ```
