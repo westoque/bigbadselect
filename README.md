@@ -1,7 +1,7 @@
-customselect
+bigbadselect
 ============
 
-A jQuery plugin for creating minimalistic custom selects. It doesn't modify
+A jQuery plugin for creating minimalistic custom select(s). It doesn't modify
 anything about a `select` besides adding an html layer on top which can
 be easily styled. Also works inline inside a `form`. So you do not need
 to change anything to your current structure.
@@ -17,7 +17,7 @@ Example
 -------
 
 ```js
-$('select').selectify();
+$('select').bigbadselect();
 ```
 
 Creates a simple DOM structure that is easily styled. The DOM structure
