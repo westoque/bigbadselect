@@ -4,9 +4,8 @@ bigbadselect
 A jQuery plugin for creating minimalistic custom select(s). It doesn't modify
 anything about a `select` besides adding an html layer on top which can
 be easily styled. Also works inline inside a `form`. So you do not need
-to change anything to your current structure.
-
-Doesn't use themes (who uses them anyways?).
+to change anything to your current structure. Also supports custom
+templates for an `option` and the currently selected `option`.
 
 Requirements
 ------------
