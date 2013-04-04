@@ -20,7 +20,7 @@ jQuery version ~> 1.9.1
 Docs
 ----
 
-[Documentation]:(http://westoque.github.com/bigbadselect)
+Go to the [documentation](http://westoque.github.com/bigbadselect)
 
 
 License
