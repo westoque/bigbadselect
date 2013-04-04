@@ -7,41 +7,21 @@ be easily styled. Also works inline inside a `form`. So you do not need
 to change anything to your current structure. Also supports custom
 templates for an `option` and the currently selected `option`.
 
+Demo
+----
+
+You can find a demo "here":"http://westoque.github.com/bigbadselect"
+
 Requirements
 ------------
 
 jQuery version ~> 1.9.1
 
-Example
--------
+Docs
+----
 
-```js
-$('select').bigbadselect();
-```
+"Documentation":"http://westoque.github.com/bigbadselect"
 
-Creates a simple DOM structure that is easily styled. The DOM structure
-is as follows.
-
-A select with:
-
-```html
-<select>
-  <option value="CA">California</option>
-  <option value="NY">New York</option>
-</select>
-```
-
-Produces:
-
-```html
-<div class="bigbadselect">
-  <div class="bigbadselect-current-container">California</div>
-  <div class="bigbadselect-options-container">
-    <div class="bigbadselect-option selected" data-val="CA">California</div>
-    <div class="bigbadselect-option" data-val="NY">New York</div>
-  </div>
-</div>
-```
 
 License
 -------
