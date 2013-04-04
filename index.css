@@ -88,12 +88,14 @@ p {
 	padding: 10px;
 	width: 80px;
 	background-color: #007d9a;
+  text-align: center;
 }
 
 #download a {
 	color: #FFF;
 	text-decoration: none;
 	display: block;
+  font-weight: bold;
 }
 
 pre {
