@@ -1,11 +1,16 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <title>bigbadselect - a jquery plugin to create a custom select</title>
+    <meta name="description" content="A jQuery plugin for creating minimalistic custom select(s). The
+plugin is very simplistic, and designed for people who want to do their
+own styling. Comes with its own basic css that can be easily modified." />
     <script src="jQuery.js"></script>
     <script src="bigbadselect.js"></script>
     <script src="google-code-prettify/run_prettify.js"></script>
-    <link rel="stylesheet" type="text/css" href="bigbadselect.css">
-    <link rel="stylesheet" type="text/css" href="google-code-prettify/sunburst.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="bigbadselect.css" />
+    <link rel="stylesheet" type="text/css" href="google-code-prettify/sunburst.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
     <a href="http://github.com/westoque/bigbadselect/" id="github">
@@ -14,14 +19,15 @@
     <div id="container">
     <h1>bigbadselect</h1>
     <p>
-      A jQuery plugin for creating minimalistic custom select(s).
+      A jQuery plugin for creating minimalistic custom select(s). The
+plugin is very simplistic, and designed for people who want to do their
+own styling. Comes with its own basic css that can be easily modified.
     </p>
     <div id="download">
       <a href="https://github.com/westoque/bigbadselect">Download</a>
     </div>
-    <h2>Examples</h2>
+    <h2>Demo</h2>
     <div>
-      <h3>Simple</h3>
       <select id="color">
           <option value="red">Red</option>
           <option value="blue">Blue</option>
@@ -30,8 +36,13 @@
           <option value="black">Black</option>
       </select>
     </div>
-    <h2>Requirements</h2>
-    <p>Currently, it needs jQuery greater than 1.9.1</p>
+    <h2>How to Use</h2>
+    <p>Just include bigbadselect.css and bigbadselect.js to your
+project. Requires jQuery > 1.9.1</p>
+<pre class="prettyprint lang-html">
+&ltlink rel="stylesheet" type="text/css" href="bigbadselect.css"&gt
+&ltscript src="bigbadselect.js" type="text/javascript"&gt&lt/script&gt
+</pre>
     <h2>How it works</h2>
     <p>A select like this</p>
     <pre class="prettyprint lang-html">
@@ -39,6 +50,8 @@
   &ltoption value="m"&gtMale&lt/option&gt
   &ltoption value="f"&gtFemale&lt/option&gt
 &lt/select&gt</pre>
+    <p>bigbadselect(ed) like this</p>
+    <pre class="prettyprint">$('select').bigbadselect();</pre>
     <p>generates html like this</p>
     <pre class="prettyprint">
 &ltdiv class="bigbadselect"&gt
@@ -48,6 +61,38 @@
     &ltdiv class="bigbadselect-option" data-val="f"&gtFemale&lt/div&gt
   &lt/div&gt
 &lt/div&gt</pre>
+      <h2>Options</h2>
+      <p>currentTmpl - The template for the currently showed selected option.
+You have to return an html string that will be rendered. Passed are two arguments, the
+value and text of the option.</p>
+<pre class="prettyprint">
+var currentTmpl = function(val, text) {
+  return '&ltdiv&gt' + text + '(' + val + ')&lt/div&gt';
+};
+$('select').bigbadselect({currentTmpl: currentTmpl});
+</pre>
+<select id="current">
+  <option value="CA">California</option>
+  <option value="NY">New York</option>
+</select>
+      <p>optionTmpl - The template for an option in the options list.
+Like the currentTmpl, you need to return an html string that will be
+rendered. Also passed two arguments, namely, the val and text of the
+option.</p>
+<pre class="prettyprint">
+var optionTmpl = function(val, text) {
+  return '&ltdiv&gtValue: ' + val + '&lt/div&gt'
+};
+$('select').bigbadselect({optionTmpl: optionTmpl});
+</pre>
+<select id="opt">
+  <option value="CA">California</option>
+  <option value="NY">New York</option>
+</select>
+
+    <h2>Created By</h2>
+    <p><a href="https://twitter.com/westoque">William Estoque</a> and <a
+      href="https://github.com/mgestoquejr">Mariano Estoque</a></p>
     </div>
     
     <script type="text/javascript">
@@ -65,6 +110,18 @@
       $('#color').bigbadselect({
         currentTmpl: currentTmpl,
         optionTmpl: optionTmpl
+      });
+
+      $('#current').bigbadselect({
+        currentTmpl: function(val, text) {
+          return '<div>' + text + ' (' + val + ')</div>'
+        }
+      });
+
+      $('#opt').bigbadselect({
+        optionTmpl: function(val, text) {
+          return '<div>Value: ' + val + '</div>'
+        }
       });
 
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
