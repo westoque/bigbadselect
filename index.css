@@ -1,0 +1,101 @@
+#github img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+}
+
+body {
+	background-color: white;
+	font-family: arial;
+}
+
+h1 {
+	font-size: 45px;
+	text-align: center;
+	font-family: Helvetica;
+}
+
+h2 {
+	border-bottom: 2px solid black;
+	padding-bottom: 4px;
+}
+
+p {
+	font-size: 19px;
+	color: rgb(119, 119, 119);
+	text-align: center;
+	padding: 15px;
+	border: 1px solid eee;
+	border-radius: 10px;
+	background: #eee;
+}
+
+#container {
+	margin-left:auto;
+	margin-right:auto;
+	width:700px;
+}
+
+.color-box {
+	width: 30px;
+	height: 30px;
+	float: left;
+	border: 1px solid black;
+}
+
+.color-box.red { background: red; }
+.color-box.blue { background: blue; }
+.color-box.black { background: black; }
+.color-box.yellow { background: yellow; }
+
+.color-text {
+	width: 100px;
+	height: 30px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.color-arrow {
+	width: 15px;
+	height: 30px;
+	background: black;
+	color: white;
+	text-align: center;
+	float: right;
+}
+
+.color-v {
+	margin-top: 5px;
+}
+.bigbadselect-current-container {
+	overflow: hidden;
+	border: 1px solid black;
+	padding: 3px;
+}
+
+.bigbadselect-option {
+	overflow: hidden;
+	border: 1px solid black;
+	padding: 3px;
+}
+#download {
+	margin: 0 auto;
+	border: 3px solid #eee;
+	border-radius: 10px;
+	padding: 10px;
+	width: 80px;
+	background-color: #007d9a;
+}
+
+#download a {
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+}
+
+pre {
+	font-size: 15px;
+	font-family: Monaco;
+}

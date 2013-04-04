@@ -1,0 +1,25 @@
+.bigbadselected {
+  position: absolute;
+  top: -10000px;
+  left: -10000px;
+}
+
+.bigbadselect {
+  display: inline-block;
+  position: relative;
+}
+
+.bigbadselect .bigbadselect-current-container {
+  z-index: 1;
+  background: #FFF;
+}
+
+.bigbadselect .bigbadselect-options-container {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  display: none;
+  z-index: 2;
+  background: #FFF;
+}

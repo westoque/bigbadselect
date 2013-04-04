@@ -1,1 +1,72 @@
-My GitHub Page
+<html>
+  <head>
+    <script src="jQuery.js"></script>
+    <script src="bigbadselect.js"></script>
+    <script src="google-code-prettify/run_prettify.js"></script>
+    <link rel="stylesheet" type="text/css" href="bigbadselect.css">
+    <link rel="stylesheet" type="text/css" href="google-code-prettify/sunburst.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <a href="http://github.com/westoque/bigbadselect/" id="github">
+          <img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+      </a>
+    <div id="container">
+    <h1>bigbadselect</h1>
+    <p>
+      A jQuery plugin for creating minimalistic custom select(s).
+    </p>
+    <div id="download">
+      <a href="https://github.com/westoque/bigbadselect">Download</a>
+    </div>
+    <h2>Examples</h2>
+    <div>
+      <h3>Simple</h3>
+      <select id="color">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+          <option value="white">White</option>
+          <option value="black">Black</option>
+      </select>
+    </div>
+    <h2>Requirements</h2>
+    <p>Currently, it needs jQuery greater than 1.9.1</p>
+    <h2>How it works</h2>
+    <p>A select like this</p>
+    <pre class="prettyprint lang-html">
+&ltselect&gt
+  &ltoption value="m"&gtMale&lt/option&gt
+  &ltoption value="f"&gtFemale&lt/option&gt
+&lt/select&gt</pre>
+    <p>generates html like this</p>
+    <pre class="prettyprint">
+&ltdiv class="bigbadselect"&gt
+  &ltdiv class="bigbadselect-current-container"&gtMale&lt/div&gt
+  &ltdiv class="bigbadselect-options-container"&gt
+    &ltdiv class="bigbadselect-option selected" data-val="m"&gtMale&lt/div&gt
+    &ltdiv class="bigbadselect-option" data-val="f"&gtFemale&lt/div&gt
+  &lt/div&gt
+&lt/div&gt</pre>
+    </div>
+    
+    <script type="text/javascript">
+      var currentTmpl = function(val, text) {
+          return '<div class="color-box ' + val + '"></div>' + 
+               '<div class="color-text">' + text + '</div>' +
+               '<div class="color-arrow">' +
+                 '<div class="color-v">V</div>'
+               '</div>';
+      };
+      var optionTmpl = function(val, text) {
+          return '<div class="color-box ' + val + '"></div>' + 
+               '<div class="color-text">' + text + '</div>';
+      };
+      $('#color').bigbadselect({
+        currentTmpl: currentTmpl,
+        optionTmpl: optionTmpl
+      });
+    </script>
+  </body>
+</html>
+
