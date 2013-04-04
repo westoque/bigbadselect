@@ -10,7 +10,7 @@ templates for an `option` and the currently selected `option`.
 Demo
 ----
 
-You can find a demo "here":"http://westoque.github.com/bigbadselect"
+You can find a demo [here](http://westoque.github.com/bigbadselect)
 
 Requirements
 ------------
@@ -20,7 +20,7 @@ jQuery version ~> 1.9.1
 Docs
 ----
 
-"Documentation":"http://westoque.github.com/bigbadselect"
+[Documentation]:(http://westoque.github.com/bigbadselect)
 
 
 License
