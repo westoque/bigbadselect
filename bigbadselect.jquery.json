@@ -15,7 +15,7 @@
   "bugs": "https://github.com/westoque/bigbadselect/issues",
   "homepage": "http://westoque.github.io/bigbadselect",
   "docs": "http://westoque.github.io/bigbadselect",
-  "download": "http://westoque.github.io/bigbadselect",
+  "download": "http://hivelocity.dl.sourceforge.net/project/bigbadselect/bigbadselect-0.0.1.zip",
   "dependencies": {
     "jquery": ">= 1.9"
   }
