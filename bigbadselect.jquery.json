@@ -1,0 +1,22 @@
+{
+  "name": "bigbadselect",
+  "version": "0.0.1",
+  "title": "bigbadselect",
+  "description": "A jQuery plugin for creating minimalistic custom select (s)",
+  "author": {
+    "name": "William Estoque",
+    "email": "william.estoque@gmail.com",
+    "url": "https://twitter.com/westoque"
+  },
+  "licenses": [{
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+  }],
+  "bugs": "https://github.com/westoque/bigbadselect/issues",
+  "homepage": "http://westoque.github.io/bigbadselect",
+  "docs": "http://westoque.github.io/bigbadselect",
+  "download": "http://westoque.github.io/bigbadselect",
+  "dependencies": {
+    "jquery": ">= 1.9"
+  }
+}
